@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Win Tech - Assurance Santé</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="index.html">Win<span>Tech</span></a>
+      <ul class="desktop-nav ms-auto">
+        <li><a class="nav-link" href="index.html">Accueil</a></li>
+        <li><a class="nav-link" href="retraite.html">Assurance Retraite</a></li>
+        <li><a class="nav-link" href="sante.html">Assurance Santé</a></li>
+        <li><a class="nav-link" href="vie.html">Assurance Vie</a></li>
+        <li><a class="nav-link" href="vehicule.html">Assurance Véhicule</a></li>
+        <li><a class="nav-link" href="voyages.html">Assurance Voyages</a></li>
+        <li><a class="nav-link" href="actualites.html">Actualités</a></li>
+      </ul>
+      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand">Win<span>Tech</span></a>
+      <button class="drawer-close" id="drawerClose">&#10005;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="retraite.html">Assurance Retraite</a></li>
+      <li><a href="sante.html">Assurance Santé</a></li>
+      <li><a href="vie.html">Assurance Vie</a></li>
+      <li><a href="vehicule.html">Assurance Véhicule</a></li>
+      <li><a href="voyages.html">Assurance Voyages</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+    </ul>
+  </div>
+
+  <div class="page-header">
+    <img src="images/hero-sante.jpg" alt="Assurance Santé" class="header-bg"/>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Accueil</a></li>
+          <li class="breadcrumb-item active text-white">Assurance Santé</li>
+        </ol>
+      </nav>
+      <h1><i class="bi bi-heart-pulse me-2"></i>Assurance Santé</h1>
+      <p class="mt-2 opacity-75">Une couverture médicale pour vous et votre famille</p>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6 fade-in">
+          <img src="images/sante-section.jpg" alt="Santé" class="section-img"/>
+        </div>
+        <div class="col-md-6 fade-in">
+          <h2 class="section-title text-start">Une santé bien couverte</h2>
+          <p>Nos formules santé prennent en charge les frais médicaux courants et les hospitalisations, avec un réseau de cliniques partenaires dans tout le pays.</p>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Consultations médicales remboursées</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Hospitalisation prise en charge</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Médicaments et analyses couverts</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Optique, dentaire et maternité inclus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Ce que nous couvrons</h2>
+      <div class="row g-4 mt-2">
+        <div class="col-md-3 fade-in">
+          <div class="card p-4 h-100">
+            <i class="bi bi-hospital fs-2 text-primary mb-3"></i>
+            <h6 class="fw-bold">Hospitalisation</h6>
+            <p class="text-muted small">Frais d'hospitalisation couverts jusqu'à 100%</p>
+          </div>
+        </div>
+        <div class="col-md-3 fade-in">
+          <div class="card p-4 h-100">
+            <i class="bi bi-capsule fs-2 text-primary mb-3"></i>
+            <h6 class="fw-bold">Médicaments</h6>
+            <p class="text-muted small">Remboursement des ordonnances médicales</p>
+          </div>
+        </div>
+        <div class="col-md-3 fade-in">
+          <div class="card p-4 h-100">
+            <i class="bi bi-eye fs-2 text-primary mb-3"></i>
+            <h6 class="fw-bold">Optique & Dentaire</h6>
+            <p class="text-muted small">Lunettes, lentilles et soins dentaires inclus</p>
+          </div>
+        </div>
+        <div class="col-md-3 fade-in">
+          <div class="card p-4 h-100">
+            <i class="bi bi-activity fs-2 text-primary mb-3"></i>
+            <h6 class="fw-bold">Maternité</h6>
+            <p class="text-muted small">Suivi de grossesse et accouchement couverts</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title">Nos formules</h2>
+      <div class="row g-4 mt-2 justify-content-center">
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold text-primary">Individuel</h5>
+            <p class="display-6 fw-bold my-3">8 000 <small class="fs-6">FCFA/mois</small></p>
+            <ul class="list-unstyled text-start">
+              <li><i class="bi bi-check text-success me-2"></i>1 personne couverte</li>
+              <li><i class="bi bi-check text-success me-2"></i>Consultations + médicaments</li>
+              <li><i class="bi bi-check text-success me-2"></i>Hospitalisation 80%</li>
+            </ul>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100 border border-warning">
+            <span class="badge bg-warning text-dark mb-2">Recommandé</span>
+            <h5 class="fw-bold text-primary">Famille</h5>
+            <p class="display-6 fw-bold my-3">25 000 <small class="fs-6">FCFA/mois</small></p>
+            <ul class="list-unstyled text-start">
+              <li><i class="bi bi-check text-success me-2"></i>Jusqu'à 6 personnes</li>
+              <li><i class="bi bi-check text-success me-2"></i>Couverture complète</li>
+              <li><i class="bi bi-check text-success me-2"></i>Hospitalisation 100%</li>
+            </ul>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light" id="devis">
+    <div class="container">
+      <h2 class="section-title text-center">Demande de devis</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="card p-4 shadow-sm">
+            <div class="mb-3">
+              <label class="form-label">Nom complet</label>
+              <input type="text" class="form-control" placeholder="Votre nom"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="votre@email.com"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Nombre de personnes à couvrir</label>
+              <input type="number" class="form-control" min="1" placeholder="1"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Formule souhaitée</label>
+              <select class="form-select">
+                <option>Individuel</option>
+                <option>Famille</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-accent w-100">Envoyer ma demande</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-1">
+        <a href="index.html">Accueil</a>
+        <a href="sante.html">Santé</a>
+        <a href="vie.html">Vie</a>
+        <a href="vehicule.html">Véhicule</a>
+        <a href="voyages.html">Voyages</a>
+        <a href="actualites.html">Actualités</a>
+      </p>
+      <p class="mb-0">&copy; 2026 Win Tech — Cotonou, Bénin — contact@wintech.bj</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="btn btn-accent" style="display:none;position:fixed;bottom:30px;right:30px;z-index:999;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

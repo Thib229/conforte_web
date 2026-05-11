@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Win Tech - Assurance Vie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="index.html">Win<span>Tech</span></a>
+      <ul class="desktop-nav ms-auto">
+        <li><a class="nav-link" href="index.html">Accueil</a></li>
+        <li><a class="nav-link" href="retraite.html">Assurance Retraite</a></li>
+        <li><a class="nav-link" href="sante.html">Assurance Santé</a></li>
+        <li><a class="nav-link" href="vie.html">Assurance Vie</a></li>
+        <li><a class="nav-link" href="vehicule.html">Assurance Véhicule</a></li>
+        <li><a class="nav-link" href="voyages.html">Assurance Voyages</a></li>
+        <li><a class="nav-link" href="actualites.html">Actualités</a></li>
+      </ul>
+      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand">Win<span>Tech</span></a>
+      <button class="drawer-close" id="drawerClose">&#10005;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="retraite.html">Assurance Retraite</a></li>
+      <li><a href="sante.html">Assurance Santé</a></li>
+      <li><a href="vie.html">Assurance Vie</a></li>
+      <li><a href="vehicule.html">Assurance Véhicule</a></li>
+      <li><a href="voyages.html">Assurance Voyages</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+    </ul>
+  </div>
+
+  <div class="page-header">
+    <img src="images/hero-vie.jpg" alt="Assurance Vie" class="header-bg"/>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Accueil</a></li>
+          <li class="breadcrumb-item active text-white">Assurance Vie</li>
+        </ol>
+      </nav>
+      <h1><i class="bi bi-shield-heart me-2"></i>Assurance Vie</h1>
+      <p class="mt-2 opacity-75">Protégez vos proches et assurez leur avenir</p>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6 fade-in">
+          <h2 class="section-title text-start">Un capital pour ceux que vous aimez</h2>
+          <p>L'assurance vie Win Tech vous permet de constituer un capital pour vos bénéficiaires tout en épargnant pour votre propre avenir. En cas de décès, vos proches reçoivent le capital prévu au contrat.</p>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Capital versé aux bénéficiaires en cas de décès</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Épargne récupérable à l'échéance</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Couverture invalidité incluse</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Transmission de patrimoine facilitée</li>
+          </ul>
+        </div>
+        <div class="col-md-6 fade-in">
+          <img src="images/vie-section.jpg" alt="Assurance Vie" class="section-img"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Types de contrats</h2>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100">
+            <i class="bi bi-shield-check fs-2 text-primary mb-3"></i>
+            <h5 class="fw-bold">Assurance Décès</h5>
+            <p class="text-muted">Un capital est versé à vos bénéficiaires en cas de décès. Simple et efficace pour protéger votre famille.</p>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100 border border-warning">
+            <span class="badge bg-warning text-dark mb-2">Populaire</span>
+            <i class="bi bi-graph-up-arrow fs-2 text-primary mb-3"></i>
+            <h5 class="fw-bold">Vie Épargne</h5>
+            <p class="text-muted">Combinez protection et épargne. Votre capital fructifie et vous pouvez le récupérer à l'échéance.</p>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100">
+            <i class="bi bi-people fs-2 text-primary mb-3"></i>
+            <h5 class="fw-bold">Vie Famille</h5>
+            <p class="text-muted">Couverture globale incluant décès, invalidité et épargne éducation pour vos enfants.</p>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="devis">
+    <div class="container">
+      <h2 class="section-title text-center">Demande de devis</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="card p-4 shadow-sm">
+            <div class="mb-3">
+              <label class="form-label">Nom complet</label>
+              <input type="text" class="form-control" placeholder="Votre nom"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Date de naissance</label>
+              <input type="date" class="form-control"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="votre@email.com"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Type de contrat</label>
+              <select class="form-select">
+                <option>Assurance Décès</option>
+                <option>Vie Épargne</option>
+                <option>Vie Famille</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-accent w-100">Envoyer ma demande</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-1">
+        <a href="index.html">Accueil</a>
+        <a href="sante.html">Santé</a>
+        <a href="vie.html">Vie</a>
+        <a href="vehicule.html">Véhicule</a>
+        <a href="voyages.html">Voyages</a>
+        <a href="actualites.html">Actualités</a>
+      </p>
+      <p class="mb-0">&copy; 2026 Win Tech — Cotonou, Bénin — contact@wintech.bj</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="btn btn-accent" style="display:none;position:fixed;bottom:30px;right:30px;z-index:999;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

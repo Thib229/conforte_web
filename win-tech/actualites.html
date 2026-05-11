@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Win Tech - Actualités</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="index.html">Win<span>Tech</span></a>
+      <ul class="desktop-nav ms-auto">
+        <li><a class="nav-link" href="index.html">Accueil</a></li>
+        <li><a class="nav-link" href="retraite.html">Assurance Retraite</a></li>
+        <li><a class="nav-link" href="sante.html">Assurance Santé</a></li>
+        <li><a class="nav-link" href="vie.html">Assurance Vie</a></li>
+        <li><a class="nav-link" href="vehicule.html">Assurance Véhicule</a></li>
+        <li><a class="nav-link" href="voyages.html">Assurance Voyages</a></li>
+        <li><a class="nav-link" href="actualites.html">Actualités</a></li>
+      </ul>
+      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand">Win<span>Tech</span></a>
+      <button class="drawer-close" id="drawerClose">&#10005;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="retraite.html">Assurance Retraite</a></li>
+      <li><a href="sante.html">Assurance Santé</a></li>
+      <li><a href="vie.html">Assurance Vie</a></li>
+      <li><a href="vehicule.html">Assurance Véhicule</a></li>
+      <li><a href="voyages.html">Assurance Voyages</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+    </ul>
+  </div>
+
+  <div class="page-header">
+    <img src="images/hero-accueil.jpg" alt="Actualités" class="header-bg"/>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Accueil</a></li>
+          <li class="breadcrumb-item active text-white">Actualités</li>
+        </ol>
+      </nav>
+      <h1><i class="bi bi-newspaper me-2"></i>Actualités</h1>
+      <p class="mt-2 opacity-75">Les dernières nouvelles de Win Tech</p>
+    </div>
+  </div>
+
+  <!-- FILTRE -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="d-flex flex-wrap gap-2 justify-content-center" id="filterBtns">
+        <button class="btn btn-accent filter-btn" data-filter="all">Toutes</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="offre">Offres</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="evenement">Événements</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="info">Informations</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4" id="newsContainer">
+
+        <div class="col-md-4 fade-in news-item" data-category="offre">
+          <div class="card h-100 news-card">
+            <div class="card-body">
+              <span class="badge mb-2">Offre</span>
+              <p class="news-date"><i class="bi bi-calendar3 me-1"></i>15 Avril 2026</p>
+              <h5 class="fw-bold">-20% sur l'assurance santé famille</h5>
+              <p class="text-muted">Offre spéciale de printemps : protégez toute votre famille à prix réduit jusqu'au 30 avril 2026.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-primary">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-in news-item" data-category="evenement">
+          <div class="card h-100 news-card">
+            <div class="card-body">
+              <span class="badge mb-2">Événement</span>
+              <p class="news-date"><i class="bi bi-calendar3 me-1"></i>10 Avril 2026</p>
+              <h5 class="fw-bold">Win Tech au Salon de l'Assurance de Cotonou</h5>
+              <p class="text-muted">Retrouvez-nous au stand B12 du 20 au 22 mai 2026 au Palais des Congrès de Cotonou.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-primary">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-in news-item" data-category="info">
+          <div class="card h-100 news-card">
+            <div class="card-body">
+              <span class="badge mb-2">Information</span>
+              <p class="news-date"><i class="bi bi-calendar3 me-1"></i>5 Avril 2026</p>
+              <h5 class="fw-bold">Remboursement sinistres auto en 48h</h5>
+              <p class="text-muted">Win Tech réduit le délai de traitement des dossiers sinistres véhicule à 48 heures.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-primary">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-in news-item" data-category="offre">
+          <div class="card h-100 news-card">
+            <div class="card-body">
+              <span class="badge mb-2">Offre</span>
+              <p class="news-date"><i class="bi bi-calendar3 me-1"></i>1 Mars 2026</p>
+              <h5 class="fw-bold">Nouveau : Assurance Voyage Multi-destinations</h5>
+              <p class="text-muted">Une nouvelle formule couvrant jusqu'à 10 destinations par an pour les voyageurs fréquents.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-primary">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-in news-item" data-category="info">
+          <div class="card h-100 news-card">
+            <div class="card-body">
+              <span class="badge mb-2">Information</span>
+              <p class="news-date"><i class="bi bi-calendar3 me-1"></i>20 Février 2026</p>
+              <h5 class="fw-bold">Win Tech certifiée ISO 9001</h5>
+              <p class="text-muted">Notre engagement qualité est reconnu. Win Tech est désormais certifiée ISO 9001.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-primary">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 fade-in news-item" data-category="evenement">
+          <div class="card h-100 news-card">
+            <div class="card-body">
+              <span class="badge mb-2">Événement</span>
+              <p class="news-date"><i class="bi bi-calendar3 me-1"></i>10 Janvier 2026</p>
+              <h5 class="fw-bold">Journée portes ouvertes au siège</h5>
+              <p class="text-muted">Win Tech vous invite à découvrir ses locaux et rencontrer ses équipes le 15 février 2026.</p>
+            </div>
+            <div class="card-footer bg-transparent">
+              <a href="#" class="btn btn-sm btn-outline-primary">Lire la suite</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="noResults" class="text-center py-5 d-none">
+        <i class="bi bi-search fs-1 text-muted"></i>
+        <p class="text-muted mt-3">Aucun article dans cette catégorie.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-1">
+        <a href="index.html">Accueil</a>
+        <a href="sante.html">Santé</a>
+        <a href="vie.html">Vie</a>
+        <a href="vehicule.html">Véhicule</a>
+        <a href="voyages.html">Voyages</a>
+        <a href="actualites.html">Actualités</a>
+      </p>
+      <p class="mb-0">&copy; 2026 Win Tech — Cotonou, Bénin — contact@wintech.bj</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="btn btn-accent" style="display:none;position:fixed;bottom:30px;right:30px;z-index:999;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(b => {
+          b.classList.remove('btn-accent');
+          b.classList.add('btn-outline-primary');
+        });
+        this.classList.add('btn-accent');
+        this.classList.remove('btn-outline-primary');
+
+        const filter = this.dataset.filter;
+        const items = document.querySelectorAll('.news-item');
+        let visible = 0;
+        items.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = '';
+            visible++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        document.getElementById('noResults').classList.toggle('d-none', visible > 0);
+      });
+    });
+  </script>
+</body>
+</html>

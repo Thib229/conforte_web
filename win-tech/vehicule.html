@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Win Tech - Assurance Véhicule</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark py-2">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="index.html">Win<span>Tech</span></a>
+      <ul class="desktop-nav ms-auto">
+        <li><a class="nav-link" href="index.html">Accueil</a></li>
+        <li><a class="nav-link" href="retraite.html">Assurance Retraite</a></li>
+        <li><a class="nav-link" href="sante.html">Assurance Santé</a></li>
+        <li><a class="nav-link" href="vie.html">Assurance Vie</a></li>
+        <li><a class="nav-link" href="vehicule.html">Assurance Véhicule</a></li>
+        <li><a class="nav-link" href="voyages.html">Assurance Voyages</a></li>
+        <li><a class="nav-link" href="actualites.html">Actualités</a></li>
+      </ul>
+      <button class="burger-btn" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand">Win<span>Tech</span></a>
+      <button class="drawer-close" id="drawerClose">&#10005;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="retraite.html">Assurance Retraite</a></li>
+      <li><a href="sante.html">Assurance Santé</a></li>
+      <li><a href="vie.html">Assurance Vie</a></li>
+      <li><a href="vehicule.html">Assurance Véhicule</a></li>
+      <li><a href="voyages.html">Assurance Voyages</a></li>
+      <li><a href="actualites.html">Actualités</a></li>
+    </ul>
+  </div>
+
+  <div class="page-header">
+    <img src="images/hero-vehicule.jpg" alt="Assurance Véhicule" class="header-bg"/>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Accueil</a></li>
+          <li class="breadcrumb-item active text-white">Assurance Véhicule</li>
+        </ol>
+      </nav>
+      <h1><i class="bi bi-car-front me-2"></i>Assurance Véhicule</h1>
+      <p class="mt-2 opacity-75">Des formules auto pour chaque conducteur</p>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6 fade-in">
+          <img src="images/vehicule-section.jpg" alt="Assurance auto" class="section-img"/>
+        </div>
+        <div class="col-md-6 fade-in">
+          <h2 class="section-title text-start">Roulez couvert</h2>
+          <p>Voiture, moto ou camion — Win Tech vous propose une couverture adaptée à votre véhicule et à votre usage, avec une assistance dépannage disponible 24h/24.</p>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Responsabilité civile obligatoire</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Dommages tous accidents</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Vol et incendie</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Assistance dépannage 24h/24</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">Nos formules</h2>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold text-primary">Tiers Simple</h5>
+            <p class="text-muted small mb-3">La couverture minimale obligatoire</p>
+            <ul class="list-unstyled text-start">
+              <li><i class="bi bi-check text-success me-2"></i>Responsabilité civile</li>
+              <li><i class="bi bi-check text-success me-2"></i>Dommages aux tiers</li>
+              <li><i class="bi bi-x text-danger me-2"></i>Vol / Incendie</li>
+              <li><i class="bi bi-x text-danger me-2"></i>Tous risques</li>
+            </ul>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100 border border-warning">
+            <span class="badge bg-warning text-dark mb-2">Recommandé</span>
+            <h5 class="fw-bold text-primary">Tiers Étendu</h5>
+            <p class="text-muted small mb-3">Protection renforcée</p>
+            <ul class="list-unstyled text-start">
+              <li><i class="bi bi-check text-success me-2"></i>Responsabilité civile</li>
+              <li><i class="bi bi-check text-success me-2"></i>Dommages aux tiers</li>
+              <li><i class="bi bi-check text-success me-2"></i>Vol / Incendie</li>
+              <li><i class="bi bi-x text-danger me-2"></i>Tous risques</li>
+            </ul>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in">
+          <div class="card p-4 h-100">
+            <h5 class="fw-bold text-primary">Tous Risques</h5>
+            <p class="text-muted small mb-3">La protection maximale</p>
+            <ul class="list-unstyled text-start">
+              <li><i class="bi bi-check text-success me-2"></i>Responsabilité civile</li>
+              <li><i class="bi bi-check text-success me-2"></i>Dommages aux tiers</li>
+              <li><i class="bi bi-check text-success me-2"></i>Vol / Incendie</li>
+              <li><i class="bi bi-check text-success me-2"></i>Tous accidents</li>
+            </ul>
+            <a href="#devis" class="btn btn-accent mt-3">Souscrire</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="devis">
+    <div class="container">
+      <h2 class="section-title text-center">Demande de devis</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form class="card p-4 shadow-sm">
+            <div class="mb-3">
+              <label class="form-label">Nom complet</label>
+              <input type="text" class="form-control" placeholder="Votre nom"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Immatriculation</label>
+              <input type="text" class="form-control" placeholder="Ex: AB 1234 BJ"/>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Type de véhicule</label>
+              <select class="form-select">
+                <option>Voiture particulière</option>
+                <option>Moto</option>
+                <option>Camion / Utilitaire</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Formule souhaitée</label>
+              <select class="form-select">
+                <option>Tiers Simple</option>
+                <option>Tiers Étendu</option>
+                <option>Tous Risques</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-accent w-100">Envoyer ma demande</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="mb-1">
+        <a href="index.html">Accueil</a>
+        <a href="sante.html">Santé</a>
+        <a href="vie.html">Vie</a>
+        <a href="vehicule.html">Véhicule</a>
+        <a href="voyages.html">Voyages</a>
+        <a href="actualites.html">Actualités</a>
+      </p>
+      <p class="mb-0">&copy; 2026 Win Tech — Cotonou, Bénin — contact@wintech.bj</p>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="btn btn-accent" style="display:none;position:fixed;bottom:30px;right:30px;z-index:999;">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

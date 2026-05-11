@@ -1,0 +1,13 @@
+Placez vos images ici :
+- hero-accueil.jpg
+- hero-retraite.jpg
+- hero-sante.jpg
+- hero-vie.jpg
+- hero-vehicule.jpg
+- hero-voyages.jpg
+- about.jpg
+- retraite-section.jpg
+- sante-section.jpg
+- vie-section.jpg
+- vehicule-section.jpg
+- voyages-section.jpg
