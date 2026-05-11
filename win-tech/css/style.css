@@ -482,7 +482,37 @@ body.page-ready {
   font-size: 0.95rem;
 }
 
-/* FORM VALIDATION */
+/* STEPS */
+.step-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* ACCORDION */
+.accordion-button:not(.collapsed) {
+  color: var(--primary);
+  background-color: #f0f4ff;
+  box-shadow: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* CTA SECTION */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 70px 0;
+}
 .form-control.is-valid,
 .form-select.is-valid {
   border-color: #198754;

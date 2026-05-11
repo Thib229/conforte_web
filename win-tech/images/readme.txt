@@ -1,4 +1,4 @@
-Placez vos images ici :
+
 - hero-accueil.jpg
 - hero-retraite.jpg
 - hero-sante.jpg
