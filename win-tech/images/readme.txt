@@ -1,4 +1,3 @@
-
 - hero-accueil.jpg
 - hero-retraite.jpg
 - hero-sante.jpg
